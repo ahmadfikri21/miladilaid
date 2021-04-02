@@ -1,0 +1,1084 @@
+/* global */
+@font-face{
+    font-family: robotoRegular;
+    src: url(../font/Roboto-Regular.ttf);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: robotoRegular;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1100px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+.formElement label{
+    display: block;
+    color: #8B6758;
+    font-size: 18px;
+}
+
+.formElement input, .formElement select, .formElement textarea{
+    display: block;
+    width: 100%;
+    border: #8B6758 2px solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    min-height: 31px;
+    font-family: robotoRegular;
+}
+
+.formElement img{
+    margin: 10px 0px;
+    width: 200px;
+}
+
+.formErrorMsg{
+    margin-top: -5px;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.fieldError{
+    border: red 1px solid!important ;
+}
+
+.formElement input:focus, .formElement textarea:focus, .formElement select:focus{
+    outline: none;
+    border: #8B6758 2px solid;
+}
+
+
+.btnSubmit{
+    border: 0px;
+    padding: 10px 20px;
+    color: #ffffff;
+    background: #8B6758;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    float: right;
+}
+
+.defaultHeader{
+    color: #8B6758;
+    text-align: center;
+}
+
+/* Header */
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding-top: 20px;
+    font-size: 24px;
+}
+
+nav .navHeader{
+    flex: 1;
+}
+
+.navGlobal a{
+    color: #8B6758;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav ul li{
+    display: inline;
+    list-style-type: none;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.navLinks .cart{
+    position: relative;
+}
+
+nav ul li img{
+    width: 32px;
+}
+
+.countCart{
+    position: absolute;
+    font-size: 12px;
+    margin-left: -20px;
+    margin-bottom: 15px;
+    top: 40px;
+    font-weight: bold;
+}
+
+/*===== Homepage =====*/
+
+/* Warna background coklat di homepage */
+.welcomeBox{
+    position: relative;
+    min-height: 768px;
+    margin: 0 auto;
+    width: 1366px;
+    color: #ffffff;
+    background: #8B6758;
+}
+
+.welcomeBox nav a{
+    color: #ffffff;
+}
+
+.welcomeContent{
+    display: flex;
+    margin-top: 10%;
+    align-items: center;
+}
+
+/* Logo miladila */
+.miladilaLogo{
+    flex: 1;
+    position: relative;
+    width: 283px;
+    height: 283px;
+    background: #FFF0EA;
+    color: #8B6758;
+    border-radius: 50%;
+    margin-left: 10%;
+}
+
+.miladilaLogo span{
+    position: absolute;
+    font-size: 36px;
+    top: 42%;
+    left: 20%;
+}
+
+/* Bagian informasi dan subscribe */
+.welcomeText{
+    flex: 2;
+    padding: 20px 20px 20px 40px;
+    font-size: 18px;
+}
+
+.welcomeText h1{
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.txtSub{
+    margin-top: 20px;
+    border: 0;
+    height: 50px;
+    width: 327px;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 25%;
+    color: #000000;
+    font-size: 24px;
+}
+
+.txtSub::placeholder{
+    color: #000000;
+}
+
+.btnSub{
+    background: #FFF0EA;
+    height: 50px;
+    width: 140px;
+    color: #8B6758;
+    font-weight: bold;
+    font-size: 24px;
+    box-sizing: border-box;
+    border: 0;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.btnSub:hover{
+    background:#8B6758;
+    color: #FFF0EA;
+    border: 5px #FFF0EA solid;
+}
+
+.scrollIcon{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.scrollIcon img:first-child{
+    width: 36px;
+    margin-bottom: 10px;
+    margin: 0px auto 10px auto;
+}
+
+.scrollIcon img{
+    width: 56px;
+    margin-bottom: 10px;
+    margin: 0px auto 10px auto;
+}
+
+/* Shop Now */
+
+#shopNowBox{
+    min-height: 768px;
+}
+
+#shopNowBox h1{
+    text-align: center;
+    color: #8B6758;
+    font-weight: bold;
+    font-size: 48px;
+    margin: 50px auto;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+}
+
+.productList{
+    box-shadow: 10px 10px 5px gray;
+    height: 506px;
+    width: 345px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.productList img{
+    height: 361px;
+    width: 345px;
+    cursor: pointer;
+}
+
+.productInfo{
+    font-size: 18px;
+    text-align: center;
+}
+
+.productInfo p, .productInfo input, .productInfo button{
+    margin: 10px auto;
+}
+
+.productInfo input[type=number]{
+    width: 60px;
+    height: 36px;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    box-sizing: border-box;
+    margin-left: 25px;
+    margin-right: 70px;
+}
+
+.productInfo input::-webkit-inner-spin-button, 
+.productInfo input::-webkit-outer-spin-button {  
+   opacity: 1;
+}
+
+.addToCartBox{
+    display: flex;
+}
+
+.btnAddToCart{
+    font-size: 18px;
+    border: 0;
+    display: inline-block;
+    color: #ffffff;
+    background: #8B6758;
+    height: 36px;
+    width: 166px;
+    cursor:pointer;
+}
+
+/* ====== Footer ====== */
+footer{
+    height: 144px;
+    background: #8B6758;
+    width: 1366px;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin: 0 auto;
+}
+
+.boxFooter{
+    padding-top: 30px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 260px 1fr 290px;
+}
+
+.contactUs{
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.contactUs p:nth-child(2){
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.copyright{
+    margin: 0 auto;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.boxFooter  .formSubscribe label{
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.boxFooter .txtSubSm{
+    margin-top: 5px;
+    border: 0;
+    background-color: #ffffff;
+    opacity: 25%;
+    width: 170px;
+    height: 35px;
+    padding: 3px 4px;
+    margin-right: 10px;
+}
+
+.boxFooter .btnSubSm{
+    background: #FFF0EA;
+    color: #8B6758;
+    font-weight: bold;
+    font-size: 18px;
+    width: 96px;
+    height: 41px;
+    border: 0;
+    cursor: pointer;
+}
+
+.boxFooter .btnSubSm:hover{
+    background:#8B6758;
+    color: #FFF0EA;
+    border: 3px #FFF0EA solid;
+}
+
+/* ====== Shopping Cart ====== */
+.bagHeader{
+    display: flex;
+    color: #8B6758;
+    margin-top: 20px;
+}
+
+.bagHeader h1:nth-child(1){
+    flex: 80%;
+}
+
+.defaultTable{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.defaultTable tr th{
+    color: #8B6758;
+    font-size: 24px;
+    border-bottom: 2px #8B6758 solid;
+    padding-bottom: 5px;
+}
+
+.removeItems{
+    cursor: pointer;
+}
+
+.defaultTable tr td{
+    color: #8B6758;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.defaultTable tr td img{
+    width: 122px;
+    height: 126px;
+}
+
+.cartTotal {
+    text-align: right;
+    color: #8B6758;
+    font-size: 28px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+tr #emptyCart{
+    font-size: 24px;
+    padding: 30px;
+}
+
+.btnCheckout{
+    display: inline-block;
+    text-decoration: none;
+    background: #8B6758;
+    padding: 11px 30px ;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 20px 0px 40px 0px;
+    float: right;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.qtyField{
+    width: 50px;
+    height: 35px;
+    font-size: 18px;
+    text-align: center;
+    border: 2px #8B6758 solid;
+    padding-right: 5px;
+}
+
+.qtyField::-webkit-inner-spin-button, 
+.qtyField::-webkit-outer-spin-button {  
+   opacity: 1;
+}
+
+/* ====== Product Detail ====== */
+
+.productBox{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 50px auto;
+    box-shadow: 10px 10px 5px gray;
+    width: 896px;
+}
+
+.productBox img{
+    width: 100%;
+    min-height: 511px;
+    box-sizing: border-box;
+}
+
+.productBoxInfo{
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.productBoxInfo .upperBoxInfo{
+    flex: 80%;
+}
+
+.productBoxInfo h1{
+    color: #8B6758;
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+.productBoxInfo p{
+    font-size: 18px;
+    color: #969696;
+
+}
+
+.productBoxInfo .bottomBoxInfo{
+    flex: 20%;
+}
+
+.productBoxInfo h2{
+    margin-top: 20px;
+    color: #8B6758;
+}
+
+.productBoxInfo h2:nth-child(3){
+    float: right;
+    margin-right: 10px;
+}
+
+.productBoxInfo a{
+    text-decoration: none;
+    display: inline-block;
+    background: #8B6758;
+    font-size: 24px;
+    color: #ffffff;
+    height: 33px;
+    width: 36px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-right: 120px;
+}
+
+.productBoxInfo input[type=number]{
+    width: 60px;
+    height: 36px;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+/* ====== Checkout ====== */
+.checkoutBox{
+    display: flex;
+    margin: 10px auto;
+}
+
+.checkoutForm{
+    flex: 1.5;
+}
+
+.checkoutForm h3{
+    color: #8B6758;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.orderDetail{
+    flex: 1;
+    margin-left: 30px;
+    box-sizing: border-box;
+}
+
+.orderDetail h3{
+    color: #8B6758;
+    font-size: 24px;
+}
+
+.orderTab tr th, .orderTab tr td{
+    font-size: 18px;
+}
+
+.orderDetail p{
+    color: #8B6758;
+    font-size: 18px;
+    float: right;
+    clear: both;
+}
+
+.orderDetail p:nth-child(3){
+    margin-top: 20px;
+}
+
+/* ======= Payment Info ======= */
+
+.orderDescription{
+    display: flex;
+    color: #8B6758;
+    margin-top: 20px;
+}
+
+.orderValue{
+    margin-left: 20px;
+}
+
+.paymentSubtotal{
+    margin-top: 30px;
+}
+
+.paymentSubtotal p{
+    color: #8B6758;
+    font-size: 24px;
+    float: right;
+    clear: both;
+}
+
+.paymentSubtotal p:nth-child(1){
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.accountNumberDisplay{
+    background:#FFF0EA;
+    height: 183px;
+    width: 533px;
+    margin: 30px auto;
+    text-align: center;
+    color: #8B6758;
+    font-weight: bold;
+}
+
+.accountNumberDisplay h5{
+    padding-top: 40px;
+    font-size: 18px;
+}
+
+.accountNumberDisplay h3{
+    font-size: 24px;
+}
+
+.accountNumberDisplay h1{
+    font-size: 48px;
+}
+
+.confirmPaymentBox{
+    color: #8B6758;
+    font-size: 24px;
+    margin: 50px 0;
+}
+
+#btnPaymentModal{
+    border: 0px;
+    background-color: #8B6758;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.defaultModal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalContent{
+    background: #ffffff;
+    margin: 15% auto;
+    width: 732px;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.8s;
+    animation-name: animatetop;
+  animation-duration: 0.8s
+}
+
+/* memberi animasi */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+.modalHeader{
+    padding: 30px;
+    background: #E19C7F;
+    color: white;
+    font-size: 36px;
+}
+
+.modalHeader h3{
+    float: left;
+}
+
+.close{
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    float: right;
+    vertical-align: middle;
+}
+
+.close:hover,.close:focus{
+    color: #8B6758;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modalBody{
+    padding: 10px 30px;
+}
+
+.modalFooter{
+    padding: 20px 30px;
+    border-top: 2px #8B6758 solid;
+}
+
+.btnModal{
+    padding: 10px 20px;
+    border: 0px;
+    color: #fff;
+    background: #E19C7F;
+    font-weight: bold;
+    font-size: 18px;
+    float: right;
+    cursor: pointer;
+}
+
+.validationMessage{
+    background:#FFF0EA;
+    height: 183px;
+    margin: 30px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 30px;
+    text-align: center;
+    color: #8B6758;
+    font-weight: bold;
+}
+
+.paragrafBrown{
+    color: #8B6758;
+    margin-bottom: 10px;
+}
+
+.btnCancelOrder{
+    border: 0;
+    background: red;
+    border-radius: 5px;
+    color: #fff;
+    clear: both;
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px 20px;
+}
+
+/* ====== Admin ====== */
+
+/* ===== Admin Header ==== */
+
+.sideNav{    
+    height: 100%;
+    width: 212px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #B58A78;
+    overflow: hidden;
+    padding-top: 10px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.sideNav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+    padding: 15px 0px;
+    transition: 0.3s;
+}
+
+.sideNav a:hover{
+    background: #8B6758;
+    opacity: 0.3;
+}
+
+.sideNav a:nth-child(2){
+    font-weight: bold;
+}
+
+.sideNav a:first-child:hover, .sideNav a:nth-child(2):hover{
+    background: #B58A78;
+    opacity: 1;
+}
+
+.openSidebar{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.closeSidebar{
+    float: right;
+    margin-right: 10px;
+}
+
+.adminContent{
+    margin-left: 212px;
+    padding: 50px;
+    color: #8B6758;
+    transition: margin-left 0.5s;
+}
+
+.searchAndAddBox{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.searchBox{
+    flex: 1;
+    margin-top: 20px;
+    align-self: flex-end;
+}
+
+.searchField{
+    border: #8B6758 2px solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    min-height: 31px;
+    display: inline-block;
+    width: 285px;
+}
+
+.btnSearch{
+    background-image: url("http://localhost/Miladila/assets/img/searchIcon.svg");
+    background-color: #8B6758;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    border: 0px;
+    cursor: pointer;
+    width: 47px;
+    height: 31px;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+.btnAddBox{
+    flex: 1;
+    margin-top: 20px;
+    text-align: right;   
+    margin-right: 30px; 
+}
+
+.btnAdd{
+    border: 0;
+    background: #8B6758;
+    width: 196px;
+    height: 46px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.tbProducts tr th{
+    font-size: 18px;
+}
+
+.tbProducts tr td{
+    font-size: 16px;
+}
+
+.tbProducts tr td img{
+    width: 105px;
+    height: 120px;
+}
+
+.productDescription{
+    width: 250px;
+    word-wrap: break-word;
+}
+
+.paginationLinksBox{
+    margin: 20px auto 30px auto;
+    text-align: center;
+}
+
+.paginationLinks{
+    text-decoration: none;
+    padding: 10px;
+    background: #8B6758;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.activePaginationLink{
+    background: #fff;
+    border: 2px solid #8B6758;
+    color: #8B6758;
+    padding: 9px;
+    box-sizing: border-box;
+    margin: auto auto auto 10px;
+}
+
+.btnEdit, .btnDelete, .btnDetail{
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.btnEdit{
+    background: orange;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.btnEdit img, .btnDelete img, .btnDetail img{
+    position: absolute;
+    width: 20px!important;
+    height: 20px!important;
+    left: 11px;
+}
+
+.btnDelete{
+    background: red;
+}
+
+.btnDetail{
+    background: #32cd32;
+}
+
+.formBtnBox{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.formBtnBox input[type=submit]{
+    border: 0;
+    padding: 10px 20px;
+    background: #8B6758;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.formBtnBox a{
+    text-decoration: none;
+    padding: 10px 20px;
+    background: #fff;
+    color: #8B6758;
+    border: 2px solid #8B6758;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.grayedRow{
+    background: #969696;
+}
+
+.btnBack{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    background: #8B6758;
+    padding: 10px;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+    font-size: 18px;
+}
+
+.totalBill{
+    float: right;
+    margin-right: 30px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.actionRow{
+    width: 150px;
+}
+
+.normal{
+    font-weight: normal;
+}
+
+.orangeText{
+    color: orange!important;
+}
+
+.redText{
+    color: red!important;
+}
+
+.paymentStatusBox{
+    margin-top: -20px;
+    display: flex;
+    align-items: center;
+}
+
+/* Login */
+
+.loginBody{
+    background: #8B6758;
+    min-height: 768px;
+}
+
+.loginFrame{
+    padding-top: 230px;
+}
+
+.loginFrame h1{
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.loginBox{
+    background: #fff;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 400px;
+}
+
+.btnLoginBox{
+    text-align: center;
+}
+
+.btnLoginBox a{
+    background: #fff;
+    border: 3px solid #8B6758;
+    color: #8B6758;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 20px;
+    padding: 7px 20px;
+    text-decoration: none;
+}
+
+.btnLoginBox input[type=submit]{
+    border: 0px;
+    padding: 10px 20px;
+    color: #ffffff;
+    background: #8B6758;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.inputIcon{
+    position: relative;
+}
+
+.inputIcon img{
+    cursor: pointer;
+    position: absolute;
+    top: -7px;
+    left: 92%;
+    width: 24px;
+    height: 24px;
+}

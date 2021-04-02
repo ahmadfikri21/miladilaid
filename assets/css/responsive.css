@@ -1,0 +1,52 @@
+@media only screen and (max-width:425px){
+    /* global */
+    .container{
+        width: 400px;
+    }
+
+    footer{
+        width: 425px;
+    }
+
+    /* Homepage */
+    .welcomeBox{
+        width: 425px;
+    }
+
+    .miladilaLogo{
+        display: none;
+    }
+
+    .welcomeText h1{
+        text-align: center;
+    }
+
+    .welcomeText span{
+        text-align: justify;
+    }
+
+    .txtSub{
+        width: 100%;
+    }
+
+    .btnSub{
+        width:100%;
+        display: block;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .scrollIcon{
+        display: none;
+    }
+
+    .shopNowBox{
+        min-height: none;
+    }
+
+    .products{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+}
